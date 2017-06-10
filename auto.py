@@ -16,6 +16,7 @@ while 1:
 	files = os.listdir(input_dir)
 	if len(files) > 0:
 		process()
+		os.remove(os.path.join(input_dir, files[0]))
 	time.sleep(1.0)
 
 
